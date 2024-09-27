@@ -247,6 +247,11 @@ section {
                             animation-iteration-count: 1;
                         }
                     }
+
+                    .phones {
+                        display: flex;
+                        flex-direction: column;
+                    }
                 }
 
                 &.active {
@@ -458,6 +463,11 @@ section {
                 transform: translateY(0);
                 cursor: pointer;
             }
+        }
+
+        .phones {
+            display: flex;
+            flex-direction: column;
         }
     }
 }

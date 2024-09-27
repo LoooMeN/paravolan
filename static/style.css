@@ -304,6 +304,10 @@ section.spacer {
   animation-duration: 0.5s;
   animation-iteration-count: 1;
 }
+#support .tabber .tab-contents .tab .tab-item .phones {
+  display: flex;
+  flex-direction: column;
+}
 #support .tabber .tab-contents .tab.active {
   display: flex;
 }
@@ -475,6 +479,10 @@ section.spacer {
 #footer .contact-item .value img {
   transform: translateY(0);
   cursor: pointer;
+}
+#footer .contact-item .phones {
+  display: flex;
+  flex-direction: column;
 }
 
 #footerMenu {
