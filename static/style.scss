@@ -96,6 +96,10 @@ section {
             height: 100%;
             filter: grayscale(1);
         }
+        
+        .church-support {
+            width: 200px;
+        }
 
         .hero-overlay {
             position: absolute;
@@ -526,6 +530,10 @@ section {
             .content {
                 width: 100%;
                 padding: 0 30px;
+            }
+
+            .church-support {
+                width: 140px;
             }
 
             .hero-bg {

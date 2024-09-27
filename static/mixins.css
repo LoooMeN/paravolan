@@ -77,4 +77,7 @@ h2 {
   .block-subtitle {
     width: 300px;
   }
+  .big-button {
+    padding: 10px 20px;
+  }
 }

@@ -77,6 +77,9 @@ h2 {
   .block-subtitle {
     width: 300px;
   }
+  .big-button {
+    padding: 10px 20px;
+  }
 }
 @keyframes hopper {
   0% {
@@ -170,6 +173,9 @@ section.spacer {
   width: 100%;
   height: 100%;
   filter: grayscale(1);
+}
+#hero .big-hero .church-support {
+  width: 200px;
 }
 #hero .big-hero .hero-overlay {
   position: absolute;
@@ -528,6 +534,9 @@ section.spacer {
   #hero .big-hero .content {
     width: 100%;
     padding: 0 30px;
+  }
+  #hero .big-hero .church-support {
+    width: 140px;
   }
   #hero .big-hero .hero-bg {
     -o-object-fit: cover;
