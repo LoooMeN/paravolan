@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css" rel="stylesheet">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="PARAVOLAN">
+    <meta property="og:description" content="Сайт ГО PARAVOLAN">
+    <meta property="og:site_name" content="PARAVOLAN">
+    <meta property="og:image" content="/static/images/social.png">
+    <meta property="og:image:type" content="image/jpg">
+    <meta property="og:image:width" content="1200px">
+    <meta property="og:image:height" content="630px">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="PARAVOLAN">
+    <meta name="twitter:description" content="Сайт ГО PARAVOLAN">
+    <meta name="twitter:image" content="/static/images/social.png">
+    <meta name="twitter:dnt" content="on">
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/static/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/static/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/static/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/static/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <title>PARAVOLAN</title>
+</head>
+<body>
+    <section id="header">
+        <div class="block-wrapper header-wrapper">
+            <a href="/">
+                <img src="/static/icons/small_logo.svg" alt="PARAVOLAN" class="header-logo">
+            </a>
+            <div id="headerNav" class="header-nav">
+                <a class="nav-item" href="#support">Реквізити</a>
+                <a class="nav-item" href="#gallery">Галерея</a>
+                <a class="nav-item" href="#partners">Партнери</a>
+                <a class="nav-item" href="#media">Новини</a>
+                <a class="nav-item" href="#footer">Контакти</a>
+                <a class="nav-item lang-switch" href="/eng/">Eng</a>
+                <a class="nav-item small-button" href="#support">Підтримати</a>
+            </div>
+            <img src="/static/icons/menu.svg" onclick="triggerMenu()" class="menu-trigger" alt="Menu button">
+        </div>
+    </section>
+    <section id="hero" class="spacer">
+        <div class="block-wrapper hero-wrapper">
+            <div class="big-hero">
+                <img src="/static/images/church.png" alt="Supporter" class="church-support">
+                <img src="/static/images/hero_image.png" alt="Image" class="hero-bg">
+                <div class="hero-overlay"></div>
+                <div class="content">
+                    <img src="/static/icons/big_logo.svg" alt="Big logo" class="big-logo">
+                    <p class="text white">ПАРАВОЛАН є однією з найбільших евакуаційних організацій в Україні.<br/><br/>Наша команда — це експерти, віддані своїй справі та Україні, які системно проводять масові евакуації поранених у тісній співпраці з бойовими медиками ЗСУ.</p>
+                    <div class="hero-buttons">
+                        <a class="big-button gray-border" href="#support" onclick="activateTab('#tab3', getItem('act3'))">підписка</a>
+                        <a class="big-button gray-border" href="#support" onclick="activateTab('#tab0', getItem('act0'))">донат</a>
+                        <a class="big-button gray-border" href="#support" onclick="activateTab('#tab4', getItem('act4'))">бізнесу</a>
+                    </div>
+                </div>
+            </div>
+            <div class="small-card">
+                <div class="card-title">
+                    <img src="/static/icons/cross.svg" alt="Blue Cross">
+                    <h3>5 років в системній евакуаці</h3>
+                </div>
+                <p class="text">Починаючи з 2020 року наша команда проводила евакуацію важкохворих дітей та дорослих з-за кордону та по Україні. В 2021 році і до початку повномаштабного вторгнення в координації з Міністерством Закордонних Справ України було евакуйовано десятки важкохворих Українців з республіки Білорусь.<br /><br />З 24 лютого 2022 року команда взяла на себе задачі військової евакуації поранених бійців зі стабілізайійних пунктів та прифронтових госпіталів.</p>
+            </div>
+            <div class="small-card">
+                <div class="card-title">
+                    <img src="/static/icons/cross.svg" alt="Blue Cross">
+                    <h3>Повністю незалежна робота</h3>
+                </div>
+                <p class="text">Команда громадської організації Параволан - це водії та медики, які є професіоналами своєї справи та патріотами України. Більша частина людей працює в організації з самого початку роботи місії.<br /><br />В нашому розпорядженні потужний автопарк, що налічує паливозаправник, а також більше пʼятнадцяти одиниць транспорту для одночасної евакуації більше 200 захисників. Транспорт обладнано необхідною медичною технікою та місцями для лежачих важкопоранених.</p>
+            </div>
+            <div class="big-card">
+                <div class="card-title">
+                    <img src="/static/icons/cross.svg" alt="Blue Cross">
+                    <h3>Масова евакуація, підтверджена кількістю врятованих життів</h3>
+                </div>
+                <p class="text">З початку повномасштабного вторгнення кількість евакуйованих бійців зі стабілізаційних пунктів та прифронтових госпіталів становить більше, ніж</p>
+                <div class="numbers">
+                    <p class="number">6</p>
+                    <p class="number">0</p>
+                    <p class="number">0</p>
+                    <p class="number">0</p>
+                    <p class="number">0</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="support">
+        <div class="support-wrapper block-wrapper">
+            <h2 >Підтримати гО ПАРАВОЛАН</h2>
+            <p class="block-subtitle text">Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Dorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="tabber">
+                <div class="tab-controls">
+                    <div id="act0" onclick="activateTab('#tab0', getItem('act0'))" class="tab active text">У гривні</div>
+                    <div id="act1" onclick="activateTab('#tab1', getItem('act1'))" class="tab text">В доларах</div>
+                    <div id="act2" onclick="activateTab('#tab2', getItem('act2'))" class="tab text">У євро</div>
+                    <div id="act3" onclick="activateTab('#tab3', getItem('act3'))" class="tab text">Підписка</div>
+                    <div id="act4" onclick="activateTab('#tab4', getItem('act4'))" class="tab text">Бізнесу</div>
+                    <!-- <div onclick="activateTab(4)" class="tab text">Інші способи допомоги</div> -->
+                </div>
+                <div class="tab-contents">
+                    <div id="tab0" class="tab active">
+                        <div class="tab-item">
+                            <div class="name">Рахунок в "Приват Банк"</div>
+                            <div class="value">
+                                UA823052990000026005045023921
+                                <img src="/static/icons/copy.svg" alt="Copy" onclick="copier(`UA823052990000026005045023921`);">
+                            </div>
+                        </div>
+                        <div class="tab-item">
+                            <div class="name">Найменування одержувача:</div>
+                            <div class="value">
+                                ГО 'ПАРАВОЛАН ЮКРЕЙН' (Громадська органiзацiя)
+                                <img src="/static/icons/copy.svg" alt="Copy" onclick="copier(`ГО 'ПАРАВОЛАН ЮКРЕЙН' (Громадська органiзацiя)`);">
+                            </div>
+                        </div>
+                        <div class="tab-item">
+                            <div class="name">ЄДРПОУ</div>
+                            <div class="value">
+                                44866091
+                                <img src="/static/icons/copy.svg" alt="Copy" onclick="copier(`44866091`);">
+                            </div>
+                        </div>
+                        <div class="tab-item">
+                            <div class="name">Назва банку:</div>
+                            <div class="value">
+                                АТ КБ "ПРИВАТБАНК"
+                                <img src="/static/icons/copy.svg" alt="Copy" onclick="copier(`АТ КБ 'ПРИВАТБАНК'`);">
+                            </div>
+                        </div>
+                        <div class="tab-item">
+                            <div class="name">ЄДРПОУ банку:</div>
+                            <div class="value">
+                                14360570
+                                <img src="/static/icons/copy.svg" alt="Copy" onclick="copier(`14360570`);">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab1" class="tab">
+                        <div class="tab-item">
+                            <div class="name">Назва підприємства/company Name</div>
+                            <div class="value">
+                                ГО ПАРАВОЛАН ЮКРЕЙН
+                                <img src="/static/icons/copy.svg" alt="Copy" onclick="copier(`ГО ПАРАВОЛАН ЮКРЕЙН`);">
+                            </div>
+                        </div>
+                        <div class="tab-item">
+                            <div class="name">IBAN Code</div>
+                            <div class="value">
+                                UA963052990000026007025024335
+                                <img src="/static/icons/copy.svg" alt="Copy" onclick="copier(`UA963052990000026007025024335`);">
+                            </div>
+                        </div>
+                        <div class="tab-item">
+                            <div class="name">Назва банку/Name of the bank</div>
+                            <div class="value">
+                                JSC CB "PRIVATBANK", 1D HRUSHEVSKOHO STR., KYIV, 01001, UKRAINE
+                                <img src="/static/icons/copy.svg" alt="Copy" onclick="copier(`JSC CB 'PRIVATBANK', 1D HRUSHEVSKOHO STR., KYIV, 01001, UKRAINE`);">
+                            </div>
+                        </div>
+                        <div class="tab-item">
+                            <div class="name">requisites.swiftCode</div>
+                            <div class="value">
+                                PBANUA2X
+                                <img src="/static/icons/copy.svg" alt="Copy" onclick="copier(`PBANUA2X`);">
+                            </div>
+                        </div>
+                        <div class="tab-item">
+                            <div class="name">Адреса підприємства/Company address</div>
+                            <div class="value">
+                                UA 01001 м Київ вул Рибальськаб.13 кв.4
+                                <img src="/static/icons/copy.svg" alt="Copy" onclick="copier(`UA 01001 м Київ вул Рибальськаб.13 кв.4`);">
+                            </div>
+                        </div>
+                        <div class="tab-item">
+                            <div class="name">Рахунок в банку кореспонденті/Account in the correspondent bank</div>
+                            <div class="value">
+                                001-1-000080
+                                <img src="/static/icons/copy.svg" alt="Copy" onclick="copier(`001-1-000080`);">
+                            </div>
+                        </div>
+                        <div class="tab-item">
+                            <div class="name">SWIFT Code банку-кореспондента/SWIFT Code of the correspondent bank</div>
+                            <div class="value">
+                                CHASUS33
+                                <img src="/static/icons/copy.svg" alt="Copy" onclick="copier(`CHASUS33`);">
+                            </div>
+                        </div>
+                        <div class="tab-item">
+                            <div class="name">Банк кореспондент/Correspondent bank</div>
+                            <div class="value">
+                                JP Morgan Chase Bank, New York ,USA
+                                <img src="/static/icons/copy.svg" alt="Copy" onclick="copier(`JP Morgan Chase Bank, New York ,USA`);">
+                            </div>
+                        </div>
+                        <div class="tab-item">
+                            <div class="name">Рахунок в банку кореспонденті/Account in the correspondent bank</div>
+                            <div class="value">
+                                890-0085-754
+                                <img src="/static/icons/copy.svg" alt="Copy" onclick="copier(`890-0085-754`);">
+                            </div>
+                        </div>
+                        <div class="tab-item">
+                            <div class="name">SWIFT Code банку-кореспондента/SWIFT Code of the correspondent bank</div>
+                            <div class="value">
+                                IRVT US 3N
+                                <img src="/static/icons/copy.svg" alt="Copy" onclick="copier(`IRVT US 3N`);">
+                            </div>
+                        </div>
+                        <div class="tab-item">
+                            <div class="name">Банк кореспондент/Correspondent bank</div>
+                            <div class="value">
+                                The Bank of New York Mellon, New York, USA
+                                <img src="/static/icons/copy.svg" alt="Copy" onclick="copier(`The Bank of New York Mellon, New York, USA`);">
+                            </div>
+                        </div>
+                        <div class="tab-item">
+                            <div class="name">Рахунок в банку кореспонденті/Account in the correspondent bank</div>
+                            <div class="value">
+                                36445343
+                                <img src="/static/icons/copy.svg" alt="Copy" onclick="copier(`36445343`);">
+                            </div>
+                        </div>
+                        <div class="tab-item">
+                            <div class="name">SWIFT Code банку-кореспондента/SWIFT Code of the correspondent bank</div>
+                            <div class="value">
+                                CITI US 33
+                                <img src="/static/icons/copy.svg" alt="Copy" onclick="copier(`CITI US 33`);">
+                            </div>
+                        </div>
+                        <div class="tab-item">
+                            <div class="name">Банк кореспондент/Correspondent bank</div>
+                            <div class="value">
+                                Citibank N.A., NEW YORK, USA
+                                <img src="/static/icons/copy.svg" alt="Copy" onclick="copier(`Citibank N.A., NEW YORK, USA`);">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab2" class="tab">
+                        <div class="tab-item">
+                            <div class="name">Назва підприємства/company Name</div>
+                            <div class="value">
+                                ГО ПАРАВОЛАН ЮКРЕЙН
+                                <img src="/static/icons/copy.svg" alt="Copy" onclick="copier(`ГО ПАРАВОЛАН ЮКРЕЙН`);">
+                            </div>
+                        </div>
+                        <div class="tab-item">
+                            <div class="name">Назва банку/Name of the bank</div>
+                            <div class="value">
+                                JSC CB "PRIVATBANK", 1D HRUSHEVSKOHO STR., KYIV, 01001, UKRAINE
+                                <img src="/static/icons/copy.svg" alt="Copy" onclick="copier(`JSC CB 'PRIVATBANK', 1D HRUSHEVSKOHO STR., KYIV, 01001, UKRAINE`);">
+                            </div>
+                        </div>
+                        <div class="tab-item">
+                            <div class="name">IBAN Code</div>
+                            <div class="value">
+                                UA923052990000026006025034917
+                                <img src="/static/icons/copy.svg" alt="Copy" onclick="copier(`UA923052990000026006025034917`);">
+                            </div>
+                        </div>
+                        <div class="tab-item">
+                            <div class="name">requisites.swiftCode</div>
+                            <div class="value">
+                                PBANUA2X
+                                <img src="/static/icons/copy.svg" alt="Copy" onclick="copier(`PBANUA2X`);">
+                            </div>
+                        </div>
+                        <div class="tab-item">
+                            <div class="name">Адреса підприємства/Company address</div>
+                            <div class="value">
+                                UA 01001 м Київ вул Рибальськаб.13 кв.4
+                                <img src="/static/icons/copy.svg" alt="Copy" onclick="copier(`UA 01001 м Київ вул Рибальськаб.13 кв.4`);">
+                            </div>
+                        </div>
+                        <div class="tab-item">
+                            <div class="name">Рахунок в банку кореспонденті/Account in the correspondent bank</div>
+                            <div class="value">
+                                400886700401
+                                <img src="/static/icons/copy.svg" alt="Copy" onclick="copier(`400886700401`);">
+                            </div>
+                        </div>
+                        <div class="tab-item">
+                            <div class="name">SWIFT Code банку-кореспондента/SWIFT Code of the correspondent bank</div>
+                            <div class="value">
+                                COBADEFF
+                                <img src="/static/icons/copy.svg" alt="Copy" onclick="copier(`COBADEFF`);">
+                            </div>
+                        </div>
+                        <div class="tab-item">
+                            <div class="name">Банк кореспондент/Correspondent bank</div>
+                            <div class="value">
+                                Commerzbank AG, Frankfurt am Main, Germany
+                                <img src="/static/icons/copy.svg" alt="Copy" onclick="copier(`Commerzbank AG, Frankfurt am Main, Germany`);">
+                            </div>
+                        </div>
+                        <div class="tab-item">
+                            <div class="name">Рахунок в банку кореспонденті/Account in the correspondent bank</div>
+                            <div class="value">
+                                6231605145
+                                <img src="/static/icons/copy.svg" alt="Copy" onclick="copier(`6231605145`);">
+                            </div>
+                        </div>
+                        <div class="tab-item">
+                            <div class="name">SWIFT Code банку-кореспондента/SWIFT Code of the correspondent bank</div>
+                            <div class="value">
+                                CHASDEFX
+                                <img src="/static/icons/copy.svg" alt="Copy" onclick="copier(`CHASDEFX`);">
+                            </div>
+                        </div>
+                        <div class="tab-item">
+                            <div class="name">Банк кореспондент/Correspondent bank</div>
+                            <div class="value">
+                                J.P.MORGAN AG, FRANKFURT AM MAIN, GERMANY
+                                <img src="/static/icons/copy.svg" alt="Copy" onclick="copier(`J.P.MORGAN AG, FRANKFURT AM MAIN, GERMANY`);">
+                            </div>
+                        </div>
+                        <div class="tab-item">
+                            <div class="name">Рахунок в банку кореспонденті/Account in the correspondent bank</div>
+                            <div class="value">
+                                5184099710, IBAN DE39503303005184099710
+                                <img src="/static/icons/copy.svg" alt="Copy" onclick="copier(`5184099710, IBAN DE39503303005184099710`);">
+                            </div>
+                        </div>
+                        <div class="tab-item">
+                            <div class="name">SWIFT Code банку-кореспондента/SWIFT Code of the correspondent bank</div>
+                            <div class="value">
+                                IRVTDEFX
+                                <img src="/static/icons/copy.svg" alt="Copy" onclick="copier(`IRVTDEFX`);">
+                            </div>
+                        </div>
+                        <div class="tab-item">
+                            <div class="name">Банк кореспондент/Correspondent bank</div>
+                            <div class="value">
+                                THE BANK OF NEW YORK MELLON, FRANKFURT AM MAIN
+                                <img src="/static/icons/copy.svg" alt="Copy" onclick="copier(`THE BANK OF NEW YORK MELLON, FRANKFURT AM MAIN`);">
+                            </div>
+                        </div>
+                        <div class="tab-item">
+                            <div class="name">Рахунок в банку кореспонденті/Account in the correspondent bank</div>
+                            <div class="value">
+                                0042997188, IBAN IE96CITI99005142997188
+                                <img src="/static/icons/copy.svg" alt="Copy" onclick="copier(`0042997188, IBAN IE96CITI99005142997188`);">
+                            </div>
+                        </div>
+                        <div class="tab-item">
+                            <div class="name">SWIFT Code банку-кореспондента/SWIFT Code of the correspondent bank</div>
+                            <div class="value">
+                                CITIIE2X
+                                <img src="/static/icons/copy.svg" alt="Copy" onclick="copier(`CITIIE2X`);">
+                            </div>
+                        </div>
+                        <div class="tab-item">
+                            <div class="name">Банк кореспондент/Correspondent bank</div>
+                            <div class="value">
+                                CITIBANK EUROPE PLC
+                                <img src="/static/icons/copy.svg" alt="Copy" onclick="copier(`CITIBANK EUROPE PLC`);">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab3" class="tab">
+                        <div class="tab-item">
+                            <div class="value">
+                                Soon...
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab4" class="tab">
+                        <div class="tab-item">
+                            <div class="value">
+                                Завдяки неперервній підтримці бізнесу та підприємців, місія Параволан продовжує безперебійну роботу з порятунку життів наших захисників. Ми знаходимось в постійному пошуку нових партнерів та фінансових донорів. Якщо ваш бізнес хоче підтримати нашу роботу одноразово або на постійній основі, будь-ласка, звʼяжіться з нами за контактами нижче:<br /><br />
+
+*надати телефони та пошту*
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="gallery" class="black-bg">
+        <h2 class="white">галерея</h2>
+        <div id="image-slider" class="splide">
+            <div class="splide__track">
+                  <ul class="splide__list">
+                      <li class="splide__slide">
+                        <img src="/static/images/gallery_2.png">
+                      </li>
+                      <li class="splide__slide">
+                        <img src="/static/images/gallery_2.png">
+                      </li>
+                      <li class="splide__slide">
+                        <img src="/static/images/gallery_2.png">
+                      </li>
+                      <li class="splide__slide">
+                        <img src="/static/images/gallery_2.png">
+                      </li>
+                      <li class="splide__slide">
+                        <img src="/static/images/gallery_2.png">
+                      </li>
+                      <li class="splide__slide">
+                        <img src="/static/images/gallery_2.png">
+                      </li>
+                      <li class="splide__slide">
+                        <img src="/static/images/gallery_2.png">
+                      </li>
+                  </ul>
+            </div>
+          </div>
+    </section>
+    <section id="partners">
+        <div class="block-wrapper partners-wrapper">
+            <h2>наші партнери</h2>
+            <p class="block-subtitle text">Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Dorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="partners">
+                <img class="partner" src="/static/images/partner_wog.png" alt="Wog">
+                <img class="partner" src="/static/images/partner_dmytruk.png" alt="Dmytruk">
+                <img class="partner" src="/static/images/partner_smart.png" alt="Smart">
+                <img class="partner" src="/static/images/partner_idealers.png" alt="Idealers">
+            </div>
+            <div class="buttons">
+                <div>
+                    <a href="#support" onclick="activateTab('#tab0', getItem('act0'))" class="big-button">Підтримати</a>
+                </div>
+                <div>
+                    <a href="#support" onclick="activateTab('#tab4', getItem('act4'))" class="big-button">Стати партнером</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="team">
+        <div class="block-wrapper team-wrapper">
+            <h2>команда</h2>
+            <p class="block-subtitle text">Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Dorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="team">
+                <div class="member">
+                    <div class="person-image">
+                        <img class="photo" src="/static/images/person_kholodov.png" alt="Роман холодов">
+                        <img class="shield" src="/static/images/shield circle.png" alt="Logo">
+                    </div>
+                    <p class="name text">Роман холодов</p>
+                    <p class="position">Засновник, голова евакуаційної групи</p>
+                </div>
+                <div class="member">
+                    <div class="person-image">
+                        <img class="photo" src="/static/images/person_yanitskiy.png" alt="Дмитро Яницький">
+                        <img class="shield" src="/static/images/shield circle.png" alt="Logo">
+                    </div>
+                    <p class="name text">Дмитро Яницький</p>
+                    <p class="position">Директор з логістики</p>
+                </div>
+                <div class="member">
+                    <div class="person-image">
+                        <img class="photo" src="/static/images/person_komlichenko.png" alt="Ольга Комліченко">
+                        <img class="shield" src="/static/images/shield circle.png" alt="Logo">
+                    </div>
+                    <p class="name text">Ольга Комліченко</p>
+                    <p class="position">Виконавчий директор</p>
+                </div>
+                <div class="member">
+                    <div class="person-image">
+                        <img class="photo" src="/static/images/person_katya.png" alt="Катерина">
+                        <img class="shield" src="/static/images/shield circle.png" alt="Logo">
+                    </div>
+                    <p class="name text">Катерина</p>
+                    <p class="position">Операційний директор</p>
+                </div>
+                <div class="member">
+                    <div class="person-image">
+                        <img class="photo" src="/static/images/person_zharun.png" alt="Тарас Жарун">
+                        <img class="shield" src="/static/images/shield circle.png" alt="Logo">
+                    </div>
+                    <p class="name text">Тарас Жарун</p>
+                    <p class="position">Засновник, Голова організації</p>
+                </div>
+                <div class="member">
+                    <div class="person-image">
+                        <img class="photo" src="/static/images/person_sulzhyk.png" alt="Роман Сульжик">
+                        <img class="shield" src="/static/images/shield circle.png" alt="Logo">
+                    </div>
+                    <p class="name text">Роман Сульжик</p>
+                    <p class="position">Засновник</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="media">
+        <div class="block-wrapper media-wrapper">
+            <h2>згадки в медіа</h2>
+            <div class="media">
+                <a href="#" class="media-item">
+                    <div class="preview video"><img src="/static/images/media_1.png" alt="Meida image"></div>
+                    <div class="title text">‼️ВІЙНА ПРИЙДЕ до вас! 💪Волонтер, який рятує життя | Хто з Мірошниченко?</div>
+                </a>
+                <a href="#" class="media-item">
+                    <div class="preview"><img src="/static/images/media_2.png" alt="Meida image"></div>
+                    <div class="title text">"У нас було кисню на одну дитину, а довелося вивозити двох": керівник евакуаційної місії про найстрашніші випадки – "Хто з Мірошниченко?"</div>
+                </a>
+                <a href="#" class="media-item">
+                    <div class="preview video"><img src="/static/images/media_3.png" alt="Meida image"></div>
+                    <div class="title text">💪 Врятував від війни сотні життів. Історія рятівника "Параволана" Романа Холодова</div>
+                </a>
+                <a href="#" class="media-item">
+                    <div class="preview"><img src="/static/images/media_4.png" alt="Meida image"></div>
+                    <div class="title text">Параволан: Воїн Без Зброї, Що Рятує Життя в Обличчя Війни</div>
+                </a>
+                <a href="#" class="media-item">
+                    <div class="preview"><img src="/static/images/media_placeholder.png" alt="Meida image"></div>
+                    <div class="title text">Спас от войны сотни жизней. История спасателя "Параволана" Романа Холодова</div>
+                </a>
+                <a href="#" class="media-item">
+                    <div class="preview"><img src="/static/images/media_placeholder.png" alt="Meida image"></div>
+                    <div class="title text">Митрополит Епіфаній освятив евакуаційні автобуси Відділу соцслужіння Київської Митрополії</div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+        <div class="block-wrapper footer-wrapper">
+            <h2>контакти</h2>
+            <div class="contact-item">
+                <div class="name">E-mail:</div>
+                <div class="value">
+                    info@paravolanua.com
+                </div>
+            </div>
+            <div class="contact-item">
+                <div class="name">Телефон:</div>
+                <div class="value">
+                    +38 063 604 75 48<br/>+38 066 810 51 99<br/>+38 093 467 53 36
+                </div>
+            </div>
+            <div class="contact-item">
+                <div class="name">Адреса:</div>
+                <div class="value">
+                    м. Київ, вул. Рибальська, 13, офіс 4
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="footerMenu">
+        <div class="block-wrapper footer-menu-wrapper">
+            <a href="/">
+                <img src="/static/icons/footer_logo.svg" alt="PARAVOLAN" class="header-logo">
+            </a>
+            <div class="footer-nav">
+                <a class="nav-item" href="/static/docs/oferta.pdf" target="_blank">Публічна оферта</a>
+                <a class="nav-item small-button" href="#support" onclick="activateTab('#tab0', getItem('act0'))">Підтримати</a>
+            </div>
+        </div>
+    </section>
+    <script>
+        function activateTab(tabId, target) {
+            if (target.classList.contains('active')) {
+                return;
+            }
+
+            let actives = document.querySelectorAll('.active');
+
+            actives.forEach((e) => {
+                e.classList.remove('active')
+            })
+
+            target.classList.add('active')
+            document.querySelector(tabId).classList.add('active')
+        }
+
+        function copier(text) {
+            navigator.clipboard.writeText(text)
+        }
+
+        function getItem(desc) {
+            return document.querySelector("#" + desc);
+        }
+
+        function triggerMenu() {
+            let menu = document.querySelector("#headerNav");
+
+            menu.classList.toggle('active')
+        }
+    </script>
+    <script>
+        let temp = window.innerWidth;
+        temp = (100 - (834 / (temp / 100))) / 2;
+        temp = temp + '%';
+
+        console.log(temp)
+
+        new Splide( '#image-slider', {
+            type: 'loop',
+            perPage: 1,
+            pagination: false,
+            trimSpace: false,
+            fixedWidth: '804px',
+            focus: 0,
+            gap: '30px',
+            padding: temp,
+            breakpoints: {
+                1230: {
+                    gap: "0",
+                    fixedWidth: "375px",
+                    padding: "0",
+                    focus: 0,
+                    width: "375px",
+                    trimSpace: true
+                }
+            }
+        }).mount();
+    </script>
+</body>
+</html>

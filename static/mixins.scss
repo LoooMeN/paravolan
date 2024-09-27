@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Finlandica:ital,wght@0,400..700;1,400..700&display=swap');
+
+@mixin arimo-16 {
+    font-family: "Arimo", sans-serif;
+    font-size: 16px;
+}
+
+@mixin arimo-14 {
+    font-family: "Arimo", sans-serif;
+    font-size: 14px;
+}
+
+@mixin arimo-22 {
+    font-family: "Arimo", sans-serif;
+    font-size: 22px;
+}
+
+@mixin finlandica-22 {
+    font-family: "Finlandica", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+@mixin finlandica-40 {
+    font-family: "Finlandica", sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+@mixin finlandica-32 {
+    font-family: "Finlandica", sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+$text-bold: 700;
+$text-normal: 400;
+
+$desktop-width: 1220px;
+$mobile-width: 355px;
+
+$color-black: #0A0F0D;
+$color-white: #ffffff;
+$color-gray: #DBE4EA;
+$color-blue: #0004E6;
+$color-opaque-gray: rgba(10, 15, 13, 0.50);
+
+@mixin small-button {
+    @include arimo-16();
+    
+    font-weight: $text-normal;
+    color: $color-white;
+    
+    display: flex;
+    height: 40px;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: $color-black;
+}
+
+@mixin big-button {
+    @include arimo-16();
+    
+    font-weight: $text-bold;
+    color: $color-white;
+    text-transform: uppercase;
+
+    display: flex;
+    padding: 25px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex: 1 0 0;
+    border-radius: 10px;
+    background: $color-black;
+}
+
+.gray-border {
+    border: 1px solid $color-gray;
+}
+
+.small-button {
+    @include small-button();
+}
+
+.big-button {
+    @include big-button();
+}
+
+.text {
+    @include arimo-16();
+}
+
+.white {
+    color: $color-white;
+}
+
+h3 {
+    @include finlandica-22();
+
+    color: $color-black;
+}
+
+h2 {
+    @include finlandica-40();
+
+    color: $color-black;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.block-subtitle {
+    width: 594px;
+    color: $color-opaque-gray;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.black-bg {
+    background: #0A0F0D;
+}
+
+@media (max-width: 1230px) {
+    .block-subtitle {
+        width: 300px;
+    }   
+}
