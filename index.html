@@ -725,18 +725,24 @@
                     let target = entry.target;
                     let times = target.childElementCount;
 
-                    let interv = setInterval(() => {
-                        if (times > 0) {
-                        entry.target.scrollBy({
+
+                    entry.target.scrollBy({
                             left: 0,
-                            top: 50,
+                            top: 50 * times,
                             behavior: 'smooth'
                         })
-                        times = times - 1;
-                        } else {
-                            clearInterval(interv)
-                        }
-                    }, step)
+                    // let interv = setInterval(() => {
+                    //     if (times > 0) {
+                    //     entry.target.scrollBy({
+                    //         left: 0,
+                    //         top: 50,
+                    //         behavior: 'smooth'
+                    //     })
+                    //     times = times - 1;
+                    //     } else {
+                    //         clearInterval(interv)
+                    //     }
+                    // }, step)
                 }
             })
         };
