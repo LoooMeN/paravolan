@@ -669,6 +669,7 @@
             </div>
         </div>
     </section>
+    <script src="/smoothscroll.min.js"></script>
     <script>
         function activateTab(tabId, target) {
             if (target.classList.contains('active')) {
@@ -720,10 +721,9 @@
         function scroller(entries, observer) {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
-                    let step = 150;
+                    let step = 100;
                     let target = entry.target;
                     let times = target.childElementCount;
-                    alert(entry.target.offsetHeight)
 
                     let interv = setInterval(() => {
                         if (times > 0) {
