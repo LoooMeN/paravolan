@@ -188,7 +188,11 @@ section {
 
         -ms-overflow-style: none;  /* IE and Edge */
         scrollbar-width: none;  /* Firefox */
-        scroll-snap-type: y mandatory;
+        
+
+        p {
+            scroll-snap-type: y mandatory;
+        }
 
         &::-webkit-scrollbar {
             display: none;
