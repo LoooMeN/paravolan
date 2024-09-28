@@ -517,9 +517,36 @@ section.spacer {
   display: flex;
   flex-direction: column;
 }
+#footer .right h2 {
+  margin-bottom: 30px;
+}
 #footer form .row {
   display: flex;
   gap: 20px;
+  margin-bottom: 20px;
+}
+#footer form label {
+  font-family: "Arimo", sans-serif;
+  font-size: 14px;
+  color: rgba(10, 15, 13, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#footer form input {
+  font-family: "Arimo", sans-serif;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  display: flex;
+  padding: 21px 20px;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 10px;
+}
+#footer form input[type=submit] {
+  margin-top: 30px;
 }
 
 #footerMenu {
@@ -654,6 +681,18 @@ section.spacer {
   #footer .contact-item .value {
     font-family: "Arimo", sans-serif;
     font-size: 16px;
+  }
+  #footer .footer-wrapper {
+    flex-direction: column;
+  }
+  #footer .left {
+    margin-bottom: 40px;
+  }
+  #footer .row {
+    flex-direction: column;
+  }
+  #footer h2 {
+    font-size: 36px;
   }
   #footerMenu .footer-menu-wrapper {
     flex-direction: column;

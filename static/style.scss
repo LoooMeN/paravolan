@@ -508,10 +508,43 @@ section {
         }
     }
 
+    .right {
+        h2 {
+            margin-bottom: 30px;
+        }
+    }
+
     form {
         .row {
             display: flex;
             gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            @include arimo-14();
+
+            color: $color-opaque-gray;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        input {
+            @include arimo-16();
+
+            outline: none;
+            border: none;
+            display: flex;
+            padding: 21px 20px;
+            align-items: center;
+            gap: 10px;
+            align-self: stretch;
+            border-radius: 10px;
+        }
+
+        input[type=submit] {
+            margin-top: 30px;
         }
     }
 }
@@ -700,6 +733,22 @@ section {
             .value {
                 @include arimo-16();
             }
+        }
+
+        .footer-wrapper {
+            flex-direction: column;
+        }
+
+        .left {
+            margin-bottom: 40px;
+        }
+
+        .row {
+            flex-direction: column;
+        }
+
+        h2 {
+            font-size: 36px;
         }
     }
 
