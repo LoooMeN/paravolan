@@ -719,20 +719,11 @@
                     let target = entry.target;
                     let times = target.childElementCount;
 
-
-                    // entry.target.scrollBy({
-                    //         left: 0,
-                    //         top: 70 * times,
-                    //         behavior: 'smooth'
-                    //     })
-
-                    // target.classList.add('active')
-
                     let interv = setInterval(() => {
                         if (times > 0) {
                         entry.target.scrollBy({
                             left: 0,
-                            top: 50,
+                            top: 70,
                             behavior: 'smooth'
                         })
                         times = times - 1;
