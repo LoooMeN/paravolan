@@ -1,9 +1,9 @@
 @import "/static/mixins";
 
 @keyframes hopper {
-    0% {transform: translateY(0);}
-    50% {transform: translateY(-20px);}
-    100% {transform: translateY(0);}
+    0% {top: 50%; opacity: 0;}
+    50% {top: 20%; opacity: 1;}
+    100% {top: 50%; opacity: 0;}
 }
 
 html {
@@ -168,6 +168,7 @@ section {
     .numbers {
         display: flex;
         gap: 4px;
+        height: 70px;
     }
 
     .number {
@@ -175,7 +176,18 @@ section {
 
         padding: 10px;
         border-radius: 10px;
+        line-height: 125%;
         background: $color-white;
+        overflow: scroll;
+        position: relative;
+
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
     }
 }
 
@@ -236,15 +248,31 @@ section {
                         display: flex;
                         gap: 10px;
 
-                        img {
-                            transform: translateY(0);
-                            cursor: pointer;
-                        }
+                        div {
+                            position: relative;
 
-                        .hopper {
-                            animation-name: hopper;
-                            animation-duration: 0.5s;
-                            animation-iteration-count: 1;
+
+                            img {
+                                cursor: pointer;
+                            }
+
+                            
+                            &.active::after {
+                                content: "✓";
+                                position: absolute;
+                                text-align: center;
+                                font-size: 28px;
+                                color: rgb(124, 179, 41);
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                width: 50px;
+                                height: 50px;
+                                animation: hopper 0.5s 1;
+                                background: $color-gray;
+                                border-radius: 10px;
+                                opacity: 0;
+                            }
                         }
                     }
 
@@ -436,12 +464,21 @@ section {
     border-bottom: 2px solid $color-white;
 
     .footer-wrapper {
+        display: flex;
         margin-bottom: 0;
         padding-top: 30px;
         padding-bottom: 50px;
+        justify-content: space-between;
+    }
+
+    .left {
         gap: 30px;
         display: flex;
         flex-direction: column;
+    }
+
+    h2 {
+        text-align: left;
     }
 
     .contact-item {
@@ -468,6 +505,13 @@ section {
         .phones {
             display: flex;
             flex-direction: column;
+        }
+    }
+
+    form {
+        .row {
+            display: flex;
+            gap: 20px;
         }
     }
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Finlandica:ital,wght@0,400..700;1,400..700&display=swap");
 .gray-border {
   border: 1px solid #DBE4EA;
@@ -83,13 +84,16 @@ h2 {
 }
 @keyframes hopper {
   0% {
-    transform: translateY(0);
+    top: 50%;
+    opacity: 0;
   }
   50% {
-    transform: translateY(-20px);
+    top: 20%;
+    opacity: 1;
   }
   100% {
-    transform: translateY(0);
+    top: 50%;
+    opacity: 0;
   }
 }
 html {
@@ -233,6 +237,7 @@ section.spacer {
 #hero .numbers {
   display: flex;
   gap: 4px;
+  height: 70px;
 }
 #hero .number {
   font-family: "Finlandica", sans-serif;
@@ -240,7 +245,15 @@ section.spacer {
   font-weight: 600;
   padding: 10px;
   border-radius: 10px;
+  line-height: 125%;
   background: #ffffff;
+  overflow: scroll;
+  position: relative;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+#hero .number::-webkit-scrollbar {
+  display: none;
 }
 
 #support .tabber {
@@ -295,14 +308,27 @@ section.spacer {
   display: flex;
   gap: 10px;
 }
-#support .tabber .tab-contents .tab .tab-item .value img {
-  transform: translateY(0);
+#support .tabber .tab-contents .tab .tab-item .value div {
+  position: relative;
+}
+#support .tabber .tab-contents .tab .tab-item .value div img {
   cursor: pointer;
 }
-#support .tabber .tab-contents .tab .tab-item .value .hopper {
-  animation-name: hopper;
-  animation-duration: 0.5s;
-  animation-iteration-count: 1;
+#support .tabber .tab-contents .tab .tab-item .value div.active::after {
+  content: "✓";
+  position: absolute;
+  text-align: center;
+  font-size: 28px;
+  color: rgb(124, 179, 41);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  animation: hopper 0.5s 1;
+  background: #DBE4EA;
+  border-radius: 10px;
+  opacity: 0;
 }
 #support .tabber .tab-contents .tab .tab-item .phones {
   display: flex;
@@ -454,12 +480,19 @@ section.spacer {
   border-bottom: 2px solid #ffffff;
 }
 #footer .footer-wrapper {
+  display: flex;
   margin-bottom: 0;
   padding-top: 30px;
   padding-bottom: 50px;
+  justify-content: space-between;
+}
+#footer .left {
   gap: 30px;
   display: flex;
   flex-direction: column;
+}
+#footer h2 {
+  text-align: left;
 }
 #footer .contact-item {
   display: flex;
@@ -483,6 +516,10 @@ section.spacer {
 #footer .contact-item .phones {
   display: flex;
   flex-direction: column;
+}
+#footer form .row {
+  display: flex;
+  gap: 20px;
 }
 
 #footerMenu {
