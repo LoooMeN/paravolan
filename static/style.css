@@ -247,7 +247,7 @@ section.spacer {
   border-radius: 10px;
   line-height: 125%;
   background: #ffffff;
-  overflow: scroll;
+  overflow: hidden;
   position: relative;
   display: flex;
   align-items: center;
