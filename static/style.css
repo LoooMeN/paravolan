@@ -568,6 +568,9 @@ section.spacer {
   align-items: center;
   margin-bottom: 0;
 }
+#footerMenu img {
+  width: 190px;
+}
 #footerMenu .footer-nav {
   display: flex;
   gap: 30px;
