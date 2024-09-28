@@ -726,23 +726,26 @@
                     let times = target.childElementCount;
 
 
-                    entry.target.scrollBy({
-                            left: 0,
-                            top: 70 * times,
-                            behavior: 'smooth'
-                        })
-                    // let interv = setInterval(() => {
-                    //     if (times > 0) {
-                    //     entry.target.scrollBy({
+                    // entry.target.scrollBy({
                     //         left: 0,
-                    //         top: 50,
+                    //         top: 70 * times,
                     //         behavior: 'smooth'
                     //     })
-                    //     times = times - 1;
-                    //     } else {
-                    //         clearInterval(interv)
-                    //     }
-                    // }, step)
+
+                    // target.classList.add('active')
+
+                    let interv = setInterval(() => {
+                        if (times > 0) {
+                        entry.target.scrollBy({
+                            left: 0,
+                            top: 50,
+                            behavior: 'smooth'
+                        })
+                        times = times - 1;
+                        } else {
+                            clearInterval(interv)
+                        }
+                    }, step)
                 }
             })
         };

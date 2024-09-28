@@ -174,16 +174,21 @@ section {
     .number {
         @include finlandica-40();
 
-        padding: 10px;
+        padding: 10px 10px;
         border-radius: 10px;
         line-height: 125%;
         background: $color-white;
         overflow: scroll;
         position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        transition: justify-content 1s;
+        flex-direction: column;
 
         -ms-overflow-style: none;  /* IE and Edge */
         scrollbar-width: none;  /* Firefox */
-
+        
         &::-webkit-scrollbar {
             display: none;
         }

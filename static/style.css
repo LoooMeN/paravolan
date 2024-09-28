@@ -243,12 +243,17 @@ section.spacer {
   font-family: "Finlandica", sans-serif;
   font-size: 40px;
   font-weight: 600;
-  padding: 10px;
+  padding: 10px 10px;
   border-radius: 10px;
   line-height: 125%;
   background: #ffffff;
   overflow: scroll;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  transition: justify-content 1s;
+  flex-direction: column;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
