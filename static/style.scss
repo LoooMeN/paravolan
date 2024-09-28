@@ -188,10 +188,10 @@ section {
 
         -ms-overflow-style: none;  /* IE and Edge */
         scrollbar-width: none;  /* Firefox */
-        
+        scroll-snap-type: y mandatory;
 
         p {
-            scroll-snap-type: y mandatory;
+            scroll-snap-align: center;
         }
 
         &::-webkit-scrollbar {
