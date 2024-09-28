@@ -6,9 +6,9 @@ if ($_SERVER['REQUEST_METHOD'] !== "POST") {
 }
 header('Content-Type: application/json');
 
-$name = $_POST['name'];
-$email = $_POST['email'];
-$message = $_POST['message'];
+$name = $_POST['Name'];
+$email = $_POST['Email'];
+$message = $_POST['Message'];
 
 if (!$name || !$email || !$message) {
     echo json_encode(['error' => 'Missing data']);
