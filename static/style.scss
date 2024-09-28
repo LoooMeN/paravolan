@@ -670,6 +670,10 @@ section {
 
                             flex-direction: column;
 
+                            div {
+                                width: max-content;
+                            }
+
                             img {
                                 width: 24px;
                                 height: 24px;

@@ -645,6 +645,10 @@ section.spacer {
     font-size: 16px;
     flex-direction: column;
   }
+  #support .tabber .tab-contents .tab .tab-item .value div {
+    width: -moz-max-content;
+    width: max-content;
+  }
   #support .tabber .tab-contents .tab .tab-item .value img {
     width: 24px;
     height: 24px;
