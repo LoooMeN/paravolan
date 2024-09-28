@@ -256,7 +256,7 @@ section.spacer {
   flex-direction: column;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
-  overscroll-behavior: none;
+  scroll-snap-type: y mandatory;
 }
 #hero .number::-webkit-scrollbar {
   display: none;
