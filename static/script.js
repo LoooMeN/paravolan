@@ -48,7 +48,7 @@ let numbers = document.querySelectorAll('.number');
 function scroller(entries, observer) {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
-            let step = 150;
+            let step = 200;
             let target = entry.target;
             let times = target.childElementCount;
 
