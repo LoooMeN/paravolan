@@ -720,7 +720,7 @@
         function scroller(entries, observer) {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
-                    let step = 50;
+                    let step = 150;
                     let target = entry.target;
                     let times = target.childElementCount;
 
@@ -729,7 +729,7 @@
                         entry.target.scrollBy({
                             left: 0,
                             top: entry.target.offsetHeight,
-                            behavior: 'auto'
+                            behavior: 'smooth'
                         })
                         times = times - 1;
                         } else {
