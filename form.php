@@ -82,7 +82,7 @@ $htmlMessage = "
 ";
 
 // Send HTML email
-if (mail("Komlichenko.olga@gmail.com", $subject, $htmlMessage, $headers)) {
+if (mail("info@paravolanua.com", $subject, $htmlMessage, $headers)) {
     echo json_encode(['value' => 'Email sent successfully!']);
 } else {
     echo json_encode(['value' => 'Failed to send email.']);

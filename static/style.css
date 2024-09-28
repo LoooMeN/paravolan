@@ -464,7 +464,7 @@ section.spacer {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 84px;
-  z-index: 300;
+  z-index: 50;
   display: inline-block;
   height: 84px;
   background-image: url("/static/icons/play_button.svg");
