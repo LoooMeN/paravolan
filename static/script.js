@@ -86,12 +86,13 @@ let temp = window.innerWidth;
 temp = (100 - (834 / (temp / 100))) / 2;
 temp = temp + '%';
 
-new Splide( '#image-slider', {
+const optionsSplide = {
     type: 'loop',
     perPage: 1,
     pagination: false,
     trimSpace: false,
     fixedWidth: '804px',
+    width: '100%',
     focus: 0,
     gap: '30px',
     padding: temp,
@@ -105,4 +106,8 @@ new Splide( '#image-slider', {
             trimSpace: true
         }
     }
-}).mount();
+};
+
+const slider = new Splide( '#image-slider', optionsSplide);
+
+slider.mount();
