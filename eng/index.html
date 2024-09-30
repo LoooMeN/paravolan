@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TCLC9C4D');</script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/style.css">
@@ -32,6 +39,10 @@
     <meta name="description" content="ГО ПАРАВОЛАН ЮКРЕЙН - експерти, які системно проводять масові евакуації поранених у співпраці з бойовими медиками ЗСУ">
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TCLC9C4D"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <section id="header">
         <div class="block-wrapper header-wrapper">
             <a href="/">
@@ -181,6 +192,7 @@
                     <div id="act0" onclick="activateTab('#tab0', getItem('act0'))" class="tab active text">UAH</div>
                     <div id="act1" onclick="activateTab('#tab1', getItem('act1'))" class="tab text">USD</div>
                     <div id="act2" onclick="activateTab('#tab2', getItem('act2'))" class="tab text">EUR</div>
+                    <div id="act5" onclick="activateTab('#tab5', getItem('act5'))" class="tab text">PayPal</div>
                     <div id="act3" onclick="activateTab('#tab3', getItem('act3'))" class="tab text">SUBSCRIPTION</div>
                     <div id="act4" onclick="activateTab('#tab4', getItem('act4'))" class="tab text">FOR BUSINESSES</div>
                     <!-- <div onclick="activateTab(4)" class="tab text">Інші способи допомоги</div> -->
@@ -465,11 +477,28 @@
                             </div>
                         </div>
                     </div>
+                    <div id="tab5" class="tab">
+                        <div class="tab-item">
+                            <div class="name">PayPal</div>
+                            <div class="value">
+                                komlichenko.olga@gmail.com
+                                <div><img src="/static/icons/copy.svg" alt="Copy" onclick="copier(`komlichenko.olga@gmail.com`, this);"></div>
+                            </div>
+                        </div>
+                        <div class="tab-item">
+                            <div class="name">Comment</div>
+                            <div class="value">
+                                Charitable contribution
+                                <div><img src="/static/icons/copy.svg" alt="Copy" onclick="copier(`Charitable contribution`, this);"></div>
+                            </div>
+                        </div>
+                    </div>
                     <div id="tab3" class="tab">
                         <div class="tab-item">
-                            <div class="value">
-                                Soon...
-                            </div>
+                            <p class="text">Soon, we will add the possibility of signing up for monthly assistance.</p>
+                            <p class="text">In the meantime, use the link to support us now with any amount:</p>
+                            <a href="https://www.privat24.ua/rd/send_qr/liqpay_static_qr/qr_e38695158de24ecbbde142f9df6282d9" class="text"><div style="width: max-content" class="small-button">Support</div></a>
+                            <p class="text">Thank you!</p>
                         </div>
                     </div>
                     <div id="tab4" class="tab">
