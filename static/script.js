@@ -51,7 +51,7 @@ function changeUrl(tabId) {
         }
     })
 
-    history.pushState({}, '', url.href);    
+    history.replaceState({}, '', url.href);
 }
 
 function handleForm(e) {
@@ -155,10 +155,9 @@ slider.mount();
 
 document.addEventListener('DOMContentLoaded', () => {
     let url = new URL(window.location.href);
-    let params = new URLSearchParams(url.search);
 
     Object.entries(supportTypes).forEach(([key, value]) => {
-        if (params.get('support') == key) {
+        if (url.searchParams.get('support') == key) {
             activateTab(value.tab, getItem(value.item))
         }
     })
