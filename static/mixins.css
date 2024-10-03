@@ -9,13 +9,13 @@
   font-weight: 400;
   color: #ffffff;
   display: flex;
-  height: 40px;
-  padding: 10px 20px;
   justify-content: center;
   align-items: center;
+  background: #0A0F0D;
+  height: 40px;
+  padding: 10px 20px;
   gap: 10px;
   border-radius: 8px;
-  background: #0A0F0D;
 }
 
 .big-button {
@@ -25,13 +25,13 @@
   color: #ffffff;
   text-transform: uppercase;
   display: flex;
-  padding: 25px 30px;
   justify-content: center;
   align-items: center;
+  background: #0A0F0D;
+  padding: 25px 30px;
   gap: 10px;
   flex: 1 0 0;
   border-radius: 10px;
-  background: #0A0F0D;
 }
 
 .text {
