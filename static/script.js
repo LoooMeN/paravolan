@@ -1,3 +1,30 @@
+const supportTypes = {
+    "uah" : {
+        tab: "#tab0",
+        item: "act0"
+    },
+    "dol" : {
+        tab: "#tab1",
+        item: "act1"
+    },
+    "eur" : {
+        tab: "#tab2",
+        item: "act2"
+    },
+    "paypal" : {
+        tab: "#tab5",
+        item: "act5"
+    },
+    "subscribe" : {
+        tab: "#tab3",
+        item: "act3"
+    },
+    "business" : {
+        tab: "#tab4",
+        item: "act4"
+    },
+}
+
 function activateTab(tabId, target) {
     if (target.classList.contains('active')) {
         return;
@@ -11,6 +38,20 @@ function activateTab(tabId, target) {
 
     target.classList.add('active')
     document.querySelector(tabId).classList.add('active')
+
+    changeUrl(tabId)
+}
+
+function changeUrl(tabId) {
+    let url = new URL(window.location.href);
+
+    Object.entries(supportTypes).forEach(([key, value]) => {
+        if (value.tab == tabId) {
+            url.searchParams.set('support', key)
+        }
+    })
+
+    history.pushState({}, '', url.href);    
 }
 
 function handleForm(e) {
@@ -111,3 +152,14 @@ const optionsSplide = {
 const slider = new Splide( '#image-slider', optionsSplide);
 
 slider.mount();
+
+document.addEventListener('DOMContentLoaded', () => {
+    let url = new URL(window.location.href);
+    let params = new URLSearchParams(url.search);
+
+    Object.entries(supportTypes).forEach(([key, value]) => {
+        if (params.get('support') == key) {
+            activateTab(value.tab, getItem(value.item))
+        }
+    })
+})
