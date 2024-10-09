@@ -66,7 +66,7 @@ function handleForm(e) {
 }
 
 function copier(text, element) {
-    navigator.clipboard.writeText(text)
+    navigator.clipboard.writeText(text);
     element.parentElement.classList.add('active');
 
     setTimeout(() => {
